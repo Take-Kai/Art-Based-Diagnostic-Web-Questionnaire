@@ -1,0 +1,38 @@
+[
+  { "question": "性別を選んでください", "inputType": "radio", "options": ["男性", "女性", "その他"], "next": 1 },
+  { "question": "年齢を教えてください", "inputType": "text", "next": 2},
+  { "question": "本日美術館に来た目的を教えてください（展示鑑賞のため/学びのためなど）", "inputType": "text", "next": 3 },
+  { "question": "展示内容に満足しましたか？", "inputType": "choice", "yesNext": 4, "noNext": 4 },
+  { "question": "展示のどの部分が印象的でしたか？（具体的に教えてください）", "inputType": "text", "next": 5 },
+  
+  { "question": "アートを見て明るい気持ちになりたいと思いますか？", "inputType": "choice", "yesNext": 6, "noNext": 7 },
+  { "question": "プリンセスや聖母マリアに惹かれますか？", "inputType": "choice", "yesNext": 8, "noNext": 9 },
+  { "question": "ヘンテコなものに出会いたいと思いますか？", "inputType": "choice", "yesNext": 10, "noNext": 11 },
+  { "question": "ボタニカルという言葉に弱いですか？", "inputType": "choice", "yesNext": 16, "noNext": 12 },
+  { "question": "旅行では景色を楽しむ方ですか？", "inputType": "choice", "yesNext": 13, "noNext": 14 },
+  { "question": "心理学に興味がありますか？", "inputType": "choice", "yesNext": 24, "noNext": 15 },
+  { "question": "陰影がカッコいい絵を見たいと思いますか？", "inputType": "choice", "yesNext": 27, "noNext": 16 },
+  { "question": "メルヘンなテイストでも好んで見たいと思いますか？", "inputType": "choice", "yesNext": 18, "noNext": 19 },
+  { "question": "晴れている日が好きですか？", "inputType": "choice", "yesNext": 20, "noNext": 21 },
+  { "question": "現代アートが気になりますか？", "inputType": "choice", "yesNext": 22, "noNext": 23 },
+  { "question": "破壊衝動に駆られる時がありますか？", "inputType": "choice", "yesNext": 25, "noNext": 26 },
+  { "question": "退廃的なものに惹かれますか？", "inputType": "choice", "yesNext": 28, "noNext": 29 },
+  
+  { "result": "おすすめジャンル: アール・ヌーヴォー", "next": 30},
+  { "result": "おすすめジャンル: ロココ" , "next": 30 },
+  { "result": "おすすめジャンル: ゴシック" , "next": 30 },
+  { "result": "おすすめジャンル: 印象主義" , "next": 30 },
+  { "result": "おすすめジャンル: 写実主義", "next": 30},
+  { "result": "おすすめジャンル: ポップアート", "next": 30 },
+  { "result": "おすすめジャンル: ルネサンス", "next": 30 },
+  { "result": "おすすめジャンル: シュルレアリスム", "next": 30 },
+  { "result": "おすすめジャンル: ダダイズム", "next": 30 },
+  { "result": "おすすめジャンル: キュビズム", "next": 30 },
+  { "result": "おすすめジャンル: バロック", "next": 30 },
+  { "result": "おすすめジャンル: 象徴主義", "next": 30 },
+  { "result": "おすすめジャンル: フォービズム", "next": 30 },
+  
+  { "question": "このジャンルに関する展示情報を受け取りますか？", "inputType": "choice", "yesNext": 31, "noNext": 32 },
+  { "question": "メールアドレスを入力してください", "inputType": "text", "next": 32},
+  { "question": "ご協力ありがとうございました", "inputType": null, "showExportButton": true }
+]
