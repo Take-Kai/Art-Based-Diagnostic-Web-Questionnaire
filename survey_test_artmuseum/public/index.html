@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>アンケート</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- アンケート開始前の画面 -->
+    <div id="intro-screen">
+      <h1>アンケートにご協力ください</h1>
+      <p>
+        このアンケートは、展示内容に関するご意見をいただき、今後の改善に役立てるためのものです。
+        ご協力いただけますと幸いです。
+      </p>
+      <button id="start-survey-button">アンケートを始める</button>
+    </div>
+
+    <!-- アンケートの実際の画面 -->
+    <div id="survey-screen" style="display: none;">
+      <h2 id="question">読み込み中...</h2>
+
+      <input id="input-text" type="text" placeholder="回答を入力してください" style="display: none;">
+
+      <div id="input-container"></div>
+      <div class="choice-buttons" style="display: none;">
+        <button class="yes" data-choice="yes">はい</button>
+        <button class="no" data-choice="no">いいえ</button>
+      </div>
+      <button id="next-button" style="display: none;">次へ</button>
+      <button id="export-button" style="display: none;">データを送信</button>
+
+      <button id="delete-data-button" style="display: none;" onclick="deleteData()">データ削除</button>
+    </div>
+  </div>
+
+  <script>
+    function deleteData() {
+      if (confirtm('本当にデータを削除してもよろしいですか？')) {
+        fetch('/delete-data')
+          .then(response => response.json())
+          .then(data => {
+            if (data.status ==='ok') {
+              alert(data.message);
+              location.reload();
+            } else {
+              alert('エラーが発生しました: '+ data.message);
+            }
+          })
+          .catch(error => {
+            console.error('エラー', error);
+            alert('データ削除中にエラーが生じました');
+          });
+      }
+    }
+  </script>
+
+  <script src="/script.js"></script>
+</body>
+</html>

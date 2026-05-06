@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アンケート編集</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>アンケート編集</h1>
+    <button id="addQuestion">新しい質問を追加</button>
+    <ul id="questionList"></ul>
+
+    <div id="editor" style="display: none;">
+        <h2>質問を編集</h2>
+        <label>設問: <input type="text" id="editQuestion"></label>
+        <label>回答タイプ:
+            <select id="editInputType">
+                <option value="text">テキスト</option>
+                <option value="radio">選択肢</option>
+                <option value="yesno">はい/いいえ</option>
+            </select>
+        </label>
+        <label>選択肢（カンマ区切り）: <input type="text" id="editOptions"></label>
+        <button id="saveQuestion">保存</button>
+        <button id="deleteQuestion">削除</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
