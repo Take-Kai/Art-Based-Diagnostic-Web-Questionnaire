@@ -21,10 +21,10 @@
 「アンケートに回答するアプリ」と「質問を編集するアプリ」の2つで構成されています．
 
 ### 1. アンケート回答アプリ(`survey_test_artmuseum/`)
-- [Script.js]
+- [Script.js](./survey_test_artmuseum/public/script.js) / [index.html](./survey_test_artmuseum/public/index.html) / [style.css](./survey_test_artmuseum/public/styles.css)
   - `question.json`からデータを読み込み，ユーザの「はい/いいえ」の選択に応じて次に表示する質問を切り替える．
-- [app.js]
-  - 回答結果とメールアドレスをExcelファイル(`answer.xlsx`)へ蓄積・出力．
+- [app.js](./survey_test_artmuseum/app.js)
+  - 回答結果とメールアドレスをExcelファイル[answers.xlsx](./survey_test_artmuseum/answers.xlsx)へ蓄積・出力．
  
 ### 2. アンケート編集アプリ(`survey_editor_app/`)
 - 管理者がプログラミングの知識なしで，質問項目や分岐先をブラウザ上で編集・更新できるシステム．
