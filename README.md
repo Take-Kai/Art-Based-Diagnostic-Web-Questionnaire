@@ -28,9 +28,9 @@
  
 ### 2. アンケート編集アプリ(`survey_editor_app/`)
 - 管理者がプログラミングの知識なしで，質問項目や分岐先をブラウザ上で編集・更新できるシステム．
-- [server.js](./server_editor_app/server.js)
+- [server.js](./servey_editor_app/server.js)
   - 質問リストの取得・質問の削除・追加を管理
-- [script.js](./server_editor_app/public/script.js) / [index.html](./server_editor_app/index.html) / [styles.css](./server_editor_app/public/styles.css)
+- [script.js](./servey_editor_app/public/script.js) / [index.html](./servey_editor_app/index.html) / [styles.css](./servey_editor_app/public/styles.css)
   - 編集された質問項目の保存や更新
 
 ### 3. 質問やおすすめジャンルの定義(`Shared/`)
