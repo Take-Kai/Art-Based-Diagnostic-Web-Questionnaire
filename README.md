@@ -21,16 +21,18 @@
 「アンケートに回答するアプリ」と「質問を編集するアプリ」の2つで構成されています．
 
 ### 1. アンケート回答アプリ(`survey_test_artmuseum/`)
-- [Script.js](./survey_test_artmuseum/public/script.js) / [index.html](./survey_test_artmuseum/public/index.html) / [style.css](./survey_test_artmuseum/public/styles.css)
+- [script.js](./survey_test_artmuseum/public/script.js) / [index.html](./survey_test_artmuseum/public/index.html) / [style.css](./survey_test_artmuseum/public/styles.css)
   - `question.json`からデータを読み込み，ユーザの「はい/いいえ」の選択に応じて次に表示する質問を切り替える．
 - [app.js](./survey_test_artmuseum/app.js)
   - 回答結果とメールアドレスをExcelファイル[answers.xlsx](./survey_test_artmuseum/answers.xlsx)へ蓄積・出力．
  
 ### 2. アンケート編集アプリ(`survey_editor_app/`)
 - 管理者がプログラミングの知識なしで，質問項目や分岐先をブラウザ上で編集・更新できるシステム．
-- [server.js]
+- [server.js](./server_editor_app/server.js)
+  - 質問リストの取得・質問の削除・追加を管理
+- [script.js](./server_editor_app/public/script.js) / [index.html](./server_editor_app/index.html) / [styles.css](./server_editor_app/public/styles.css)
   - 編集された質問項目の保存や更新
 
 ### 3. 質問やおすすめジャンルの定義(`Shared/`)
-- [question.json]
+- [question.json](./shared/question.json)
   - 質問項目，分岐先番号，最終結果のジャンルを構造化したJSONファイル．
