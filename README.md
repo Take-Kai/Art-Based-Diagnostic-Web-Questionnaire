@@ -30,9 +30,9 @@
 - 管理者がプログラミングの知識なしで，質問項目や分岐先をブラウザ上で編集・更新できるシステム．
 - [server.js](./survey_editor_app/server.js)
   - 質問リストの取得・質問の削除・追加を管理
-- [script.js](./survey_editor_app/public/script.js) / [index.html](./survey_editor_app/index.html) / [styles.css](./survey_editor_app/public/styles.css)
+- [script.js](./survey_editor_app/public/script.js) / [index.html](./survey_editor_app/public/index.html) / [styles.css](./survey_editor_app/public/styles.css)
   - 編集された質問項目の保存や更新
 
 ### 3. 質問やおすすめジャンルの定義(`Shared/`)
-- [question.json](./shared/question.json)
+- [question.json](./shared/questions.json)
   - 質問項目，分岐先番号，最終結果のジャンルを構造化したJSONファイル．
